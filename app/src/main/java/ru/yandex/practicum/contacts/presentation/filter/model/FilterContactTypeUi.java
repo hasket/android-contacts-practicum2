@@ -24,7 +24,7 @@ public class FilterContactTypeUi implements ListDiffInterface<FilterContactTypeU
 
     @Override
     public boolean theSameAs(FilterContactTypeUi type) {
-        return this.hashCode() == type.hashCode();
+        return this.getContactType() == type.getContactType();
     }
 
     @Override
